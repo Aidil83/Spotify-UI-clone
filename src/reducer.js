@@ -4,8 +4,8 @@ export const initialState = {
 	playing: false,
 	item: null,
 	// REMOVE after finished developing...
-	// token:
-	// 	'BQBA-i4Yme4qQ1EUfy8vwPIAuz0A_hbH9V378OnvEK0tjOopAsAunWmgukTtGsiXo64QBgdfLJSuqNajKSm90I7zSPRgbUvkFRX0f8SvK_urEfikJdHXsMP439_XJJfDmGsg1mWKBxehkzSYvC9UhP8_09uzvLBIzM74IeeqfMcd1OpGwKGV',
+	token:
+		'BQBA-i4Yme4qQ1EUfy8vwPIAuz0A_hbH9V378OnvEK0tjOopAsAunWmgukTtGsiXo64QBgdfLJSuqNajKSm90I7zSPRgbUvkFRX0f8SvK_urEfikJdHXsMP439_XJJfDmGsg1mWKBxehkzSYvC9UhP8_09uzvLBIzM74IeeqfMcd1OpGwKGV',
 };
 
 const reducer = (state, action) => {
