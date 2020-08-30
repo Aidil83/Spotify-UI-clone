@@ -7,9 +7,9 @@
 	background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
 }
 
-/* .body::-webkit-scrollbar {
+.body::-webkit-scrollbar {
 	display: none;
-} */
+}
 
 .body__info {
 	display: flex;
@@ -59,4 +59,8 @@
 
 .body__infoText > p {
 	font-size: 14px;
+}
+
+.song__collection {
+	margin-bottom: 60px;
 }
