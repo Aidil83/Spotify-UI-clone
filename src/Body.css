@@ -1,14 +1,20 @@
 .body {
 	padding: 30px;
 	flex: 0.8;
-	height: 100vh;
+	height: 80vh;
 	color: white;
-	overflow-y: overlay;
+	overflow-y: auto;
 	background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
 }
 
 ::-webkit-scrollbar {
 	width: 16.75px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track-piece:end {
+	background: transparent;
+	/* margin-bottom: 105px; */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -68,6 +74,6 @@
 	font-size: 14px;
 }
 
-.song__collection {
+/* .song__collection {
 	margin-bottom: 60px;
-}
+} */
