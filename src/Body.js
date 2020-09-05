@@ -30,8 +30,8 @@ function Body({ spotify }) {
 				</div>
 
 				<div className="song__collection">
-					{discover_weekly?.tracks.items.map((item) => (
-						<SongRow track={item.track} />
+					{discover_weekly?.tracks.items.map((item, index) => (
+						<SongRow track={item.track} index={index} />
 					))}
 				</div>
 			</div>

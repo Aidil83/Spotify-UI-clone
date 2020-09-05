@@ -16,16 +16,28 @@ function Footer() {
 		console.log(current_song, "Footer");
 	});
 
+	const handleSkipPrev = () => {
+		dispatch({
+			type: "SET_SkIP_PREV",
+			// skip_prev: track,
+		});
+	};
+
+	const handleSkipNext = () => {
+		dispatch({
+			type: "SET_SKIP_NEXT",
+			// skip_next: track,
+		});
+	};
+
 	return (
 		<div className="footer">
 			<div className="footer__left">
 				<img
 					className="footer__albumLogo"
 					src={
-						// discover_weekly
-						// 	? discover_weekly?.tracks.items[0].track.album.images[0].url
-						// 	: selected_song?.album.images[0].url
-						current_song?.album.images[0].url
+						current_song?.album.images[0].url ||
+						discover_weekly?.tracks.items[0].track.album.images[0].url
 					}
 					alt=""
 				/>
@@ -37,9 +49,9 @@ function Footer() {
 
 			<div className="footer__center">
 				<ShuffleIcon className="footer__green" />
-				<SkipPreviousIcon className="footer__icon" />
+				<SkipPreviousIcon className="footer__icon" onclick={handleSkipPrev} />
 				<PlayCircleOutlineIcon fontSize="large" className="footer__icon" />
-				<SkipNextIcon className="footer__icon" />
+				<SkipNextIcon className="footer__icon" onclick={handleSkipNext} />
 				<RepeatIcon className="footer__green" />
 			</div>
 
