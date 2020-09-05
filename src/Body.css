@@ -1,20 +1,20 @@
 .body {
 	padding: 30px;
 	flex: 0.8;
-	height: 80vh;
+	height: calc(100vh - 122px);
 	color: white;
-	overflow-y: auto;
+	overflow-y: overlay;
 	background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+	background-attachment: fixed;
 }
 
 ::-webkit-scrollbar {
+	display: block;
 	width: 16.75px;
-	height: 10px;
 }
 
 ::-webkit-scrollbar-track-piece:end {
 	background: transparent;
-	/* margin-bottom: 105px; */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -73,7 +73,3 @@
 .body__infoText > p {
 	font-size: 14px;
 }
-
-/* .song__collection {
-	margin-bottom: 60px;
-} */
