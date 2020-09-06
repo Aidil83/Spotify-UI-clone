@@ -12,6 +12,7 @@ import { useDataLayerValue } from "./DataLayer";
 
 function Footer() {
 	const [{ discover_weekly, current_song }, dispatch] = useDataLayerValue();
+	console.log(discover_weekly);
 	useEffect(() => {
 		console.log(current_song, "Footer");
 	});
@@ -42,8 +43,10 @@ function Footer() {
 					alt=""
 				/>
 				<div className="footer__songInfo">
-					<h4>Yeah!</h4>
-					<p>Usher</p>
+					<strong>{current_song?.name}</strong>
+					<p>
+						{current_song?.artists[0].name} - {current_song?.album.name}
+					</p>
 				</div>
 			</div>
 
