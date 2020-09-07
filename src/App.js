@@ -13,6 +13,8 @@ import { getTokenFromUrl } from "./spotify";
 import SpotifyWebApi from "spotify-web-api-js";
 import Player from "./Player";
 import { useDataLayerValue } from "./DataLayer";
+import Sidebar from "./Sidebar";
+import SidebarOption from "./SidebarOption";
 
 const spotify = new SpotifyWebApi();
 

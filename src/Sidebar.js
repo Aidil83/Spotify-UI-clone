@@ -17,45 +17,15 @@ function Sidebar() {
 				src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
 				alt=""
 			/>
-			<Router>
-				<Switch>
-					<Route exact path="/">
-						<Link to="/" style={{ textDecoration: "none" }}>
-							<SidebarOption Icon={HomeIcon} title="Home" />
-						</Link>
-						<Link to="/Browse" style={{ textDecoration: "none" }}>
-							<SidebarOption Icon={SearchIcon} title="Browse" />
-						</Link>
-						<Link to="/Your_Library" style={{ textDecoration: "none" }}>
-							<SidebarOption Icon={LibraryMusicIcon} title="Your Library" />
-						</Link>
-					</Route>
-				</Switch>
-				<Route path="/Browse">
-					<h1>This is the Browse Page</h1>
-					<Link to="/" style={{ textDecoration: "none" }}>
-						<SidebarOption Icon={HomeIcon} title="Home" />
-					</Link>
-					<Link to="/Browse" style={{ textDecoration: "none" }}>
-						<SidebarOption Icon={SearchIcon} title="Browse" />
-					</Link>
-					<Link to="/Your_Library" style={{ textDecoration: "none" }}>
-						<SidebarOption Icon={LibraryMusicIcon} title="Your Library" />
-					</Link>
-				</Route>
-				<Route path="/Your_Library">
-					<h1>This is the Your Library Page</h1>
-					<Link to="/" style={{ textDecoration: "none" }}>
-						<SidebarOption Icon={HomeIcon} title="Home" />
-					</Link>
-					<Link to="/Browse" style={{ textDecoration: "none" }}>
-						<SidebarOption Icon={SearchIcon} title="Browse" />
-					</Link>
-					<Link to="/Your_Library" style={{ textDecoration: "none" }}>
-						<SidebarOption Icon={LibraryMusicIcon} title="Your Library" />
-					</Link>
-				</Route>
-			</Router>
+			<Link to="/" style={{ textDecoration: "none" }}>
+				<SidebarOption Icon={HomeIcon} title="Home" />
+			</Link>
+			<Link to="/Browse" style={{ textDecoration: "none" }}>
+				<SidebarOption Icon={SearchIcon} title="Browse" />
+			</Link>
+			<Link to="/Your_Library" style={{ textDecoration: "none" }}>
+				<SidebarOption Icon={LibraryMusicIcon} title="Your Library" />
+			</Link>
 
 			<br />
 			<strong className="sidebar__title">PLAYLISTS</strong>
